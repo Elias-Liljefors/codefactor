@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Scuffed Test</title>
+<style>
+body{margin:0;padding:0;background:#fff;font-family:Comic Sans MS,cursive,sans-serif}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:20px;float:left}
+h1{color:#000;font-size:42px;margin-top:0;letter-spacing:4px}
+p{line-height:1.5;margin:10px 0}
+.box{border:1px solid red;padding:4px}
+#thing{font-size:9px;color:#0f0}
+ul li{list-style:none}
+</style>
+</head>
+<body>
+<div class="container" id="thing">
+<h1 id="thing">Scuffed Code Test</H1>
+<p>This HTML file intentionally has issues:</p>
+<center><b><i><u>now even worse</u></i></b></center>
+<ul class="box">
+<li>Inconsistent indentation
+	<li>Missing closing tags
+<li>Unused styles and duplicate ids
+				<li>Poor spacing and random casing
+</ul>
+<div><p><b>bad nesting starts<div>inside p??</p></b></div>
+<img src="" width="500" height="20">
+<marquee behavior="alternate">SCUFFED SCUFFED SCUFFED</marquee>
+<button onclick="alert('clicked');doStuff();return false" style="padding:10px;background:blue;color:white;border:none;cursor:pointer;transform:rotate(0.3deg)">Click Me</button>
+<button onclick="alert('clicked again')" style="padding:10px;background:blue;color:white;border:none;cursor:pointer">Click Me</button>
+<script>
+var x=1;var y=2;var z=x+y;console.log(z);;
+z = "number maybe" + z
+if(x=2){console.log("oops assignment")} // intentional bad practice
+function test(){
+var a=10
+var b=20
+var c
+for(i=0;i<3;i++){ c = a+b+i }
+return a+b+c
+}
+function doStuff(){
+document.write("<h2>you broke the page</h2>")
+}
+setTimeout("console.log('string timeout is bad')", 200)
+</script>
+</div>
+<footer><small>footer maybe maybe not
+</body>
+</html>
